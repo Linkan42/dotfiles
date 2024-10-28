@@ -1,0 +1,5 @@
+.avalonia-build-tasks/
+go/
+/**/*.log
+micro/buffers/
+micro/backups

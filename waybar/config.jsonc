@@ -1,0 +1,122 @@
+{
+    "layer": "top",
+    "position": "top",
+    "spacing": 10,
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "network",
+        "cpu",
+        "temperature",
+        "memory",
+        "disk",
+        "backlight",
+        "battery",
+        "battery#bat2",
+        "clock",
+        "tray",
+        "custom/power"
+    ],
+
+	// ************************************
+	// ******** Customize modules ********
+	// ************************************
+    
+	// ************************************
+	// ************************************
+     "hyprland/workspaces": {
+         "all-outputs": true,
+         "format": "{name}: {icon}",
+         "format-icons": {
+             "active": "",
+             "default": ""
+         }
+     },
+	// ************************************
+	// ************************************
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+	// ************************************
+	// ************************************
+    "cpu": {
+        "format": "{usage}%",
+        "tooltip": true
+    },
+	// ************************************
+	// ************************************
+    "temperature": {
+        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 90,
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": [""]
+    },
+	// ************************************
+	// ************************************
+    "memory": {
+        "format": "{percentage}% {used}GiB"
+    },
+	// ************************************
+	// ************************************
+	"disk": {
+		"format": "{used} {percentage_free}% {free}"	
+	},
+	// ************************************
+	// ************************************
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+	// ************************************
+	// ************************************
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "(T){capacity}% {icon}",
+        "format-full": "(T){capacity}% {icon}",
+        "format-charging": "(T){capacity}%C",
+        "format-plugged": "(T){capacity}%P",
+        "format-alt": "(T){time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+	// ************************************
+	// ************************************
+    "battery#bat2": {
+        "bat": "BAT2",
+        "states": {
+			// "good": 95,
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "(B){capacity}% {icon}",
+		"format-full": "(B){capacity}% {icon}",
+		"format-charging": "(B){capacity}%C",
+		"format-plugged": "(B){capacity}%P",
+		"format-alt": "(B){time} {icon}",
+		// "format-good": "", // An empty format will hide the module
+		// "format-full": "",
+		"format-icons": ["", "", "", "", ""]
+    },
+	// ************************************
+	// ************************************
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    }
+	// ************************************
+	// ************************************
+}
