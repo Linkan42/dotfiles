@@ -3,3 +3,4 @@ go/
 /**/*.log
 micro/buffers/
 micro/backups
+dconf/
