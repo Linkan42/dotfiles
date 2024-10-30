@@ -4,3 +4,4 @@ go/
 micro/buffers/
 micro/backups
 dconf/
+okularrc
