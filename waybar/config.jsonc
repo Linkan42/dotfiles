@@ -13,6 +13,7 @@
         "cpu",
         "memory",
         "backlight",
+        "pulseaudio",
         "battery",
         "battery#bat2",
         "clock",
@@ -63,6 +64,18 @@
     },
 	// ************************************
 	// ************************************
+	"pulseaudio": {
+	    "format": "{volume}% {icon}",
+	    "format-bluetooth": "{volume}% {icon}",
+	    "format-muted": "",
+	    "format-icons": {
+	        "default": ["", ""]
+	    },
+	    "scroll-step": 1
+	    //"on-click": "pavucontrol",
+	},
+	// ************************************
+	// ************************************
     "battery": {
         "states": {
             // "good": 95,
@@ -99,8 +112,10 @@
 	// ************************************
 	// ************************************
     "clock": {
+    	"format": "{:%H:%M:%S}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%Y-%m-%d}",
+        "interval": 1
     }
 	// ************************************
 	// ************************************

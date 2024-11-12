@@ -7,3 +7,6 @@ dconf/
 okularrc
 okularpartrc
 swi-prolog/
+cef_user_data/
+pulse/
+systemd/
