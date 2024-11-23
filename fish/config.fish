@@ -12,3 +12,5 @@ set RANGER_LOAD_DEFAULT_RC false
 
 alias ff "fastfetch"
 alias ls "lsd"
+alias si "kitty +kitten icat"
+alias knime "~/knime/knime_5.3.3/knime"
