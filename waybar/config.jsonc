@@ -12,13 +12,8 @@
         "network",
         "cpu",
         "memory",
-        "backlight",
         "pulseaudio",
-        "battery",
-        "battery#bat2",
         "clock",
-        "tray",
-        "custom/power"
     ],
 
 	// ************************************
@@ -28,7 +23,6 @@
 	// ************************************
 	// ************************************
      "hyprland/workspaces": {
-         "all-outputs": true,
          "format": "{name}: {icon}",
          "format-icons": {
              "active": "",
@@ -57,13 +51,6 @@
     },
 	// ************************************
 	// ************************************
-    "backlight": {
-        // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
-    },
-	// ************************************
-	// ************************************
 	"pulseaudio": {
 	    "format": "{volume}% {icon}",
 	    "format-bluetooth": "{volume}% {icon}",
@@ -71,44 +58,9 @@
 	    "format-icons": {
 	        "default": ["", ""]
 	    },
-	    "scroll-step": 1
-	    //"on-click": "pavucontrol",
+	    "scroll-step": 1,
+	    "on-click": "pavucontrol",
 	},
-	// ************************************
-	// ************************************
-    "battery": {
-        "states": {
-            // "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "(T){capacity}% {icon}",
-        "format-full": "(T){capacity}% {icon}",
-        "format-charging": "(T){capacity}%C",
-        "format-plugged": "(T){capacity}%P",
-        "format-alt": "(T){time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
-    },
-	// ************************************
-	// ************************************
-    "battery#bat2": {
-        "bat": "BAT2",
-        "states": {
-			// "good": 95,
-			"warning": 30,
-			"critical": 15
-		},
-		"format": "(B){capacity}% {icon}",
-		"format-full": "(B){capacity}% {icon}",
-		"format-charging": "(B){capacity}%C",
-		"format-plugged": "(B){capacity}%P",
-		"format-alt": "(B){time} {icon}",
-		// "format-good": "", // An empty format will hide the module
-		// "format-full": "",
-		"format-icons": ["", "", "", "", ""]
-    },
 	// ************************************
 	// ************************************
     "clock": {
