@@ -10,6 +10,8 @@ fish_add_path /home/linus/.dotnet/tools
 
 set RANGER_LOAD_DEFAULT_RC false
 
+set -g fish_greeting ""
+
 alias ff "fastfetch"
 alias ls "lsd"
 alias si "kitty +kitten icat"
