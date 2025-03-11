@@ -16,3 +16,12 @@ alias ff "fastfetch"
 alias ls "lsd"
 alias si "kitty +kitten icat"
 alias knime "~/knime/knime_5.3.3/knime"
+#alias weather "curl v2.wttr.in/jönköping"
+alias weather "curl wttr.in/Jönköping"
+alias yoink "git pull"
+
+function yeet
+    git add .
+    git commit -m $argv
+    git push
+end
