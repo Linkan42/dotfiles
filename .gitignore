@@ -26,3 +26,14 @@ user-dirs.dirs
 user-dirs.locale
 Pinta
 rmwrc
+baloofileinformationrc
+chromium/
+dolphinrc
+kde.org/
+kdeglobals
+kdenlive-layoutsrc
+kdenliverc
+kiorc
+session/
+trashrc
+vlc/
