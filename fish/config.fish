@@ -12,10 +12,10 @@ set RANGER_LOAD_DEFAULT_RC false
 
 set -g fish_greeting ""
 
+alias fucking "sudo"
 alias ff "fastfetch"
 alias ls "lsd"
 alias si "kitty +kitten icat"
-alias knime "~/knime/knime_5.3.3/knime"
 #alias weather "curl v2.wttr.in/jönköping"
 alias weather "curl wttr.in/Jönköping"
 alias yoink "git pull"
