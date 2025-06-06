@@ -37,3 +37,8 @@ kiorc
 session/
 trashrc
 vlc/
+Proton/
+UNIGINE/
+lact/
+obs-studio/
+.gitignore
