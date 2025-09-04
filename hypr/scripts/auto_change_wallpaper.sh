@@ -1,4 +1,6 @@
 #!/usr/bin/bash
+lockfile="$HOME/.cache/auto_wallpaper_change.lock"
+
 
 if (( $# != 4 )); then
   echo "Usage: $0 <folder> <monitor> <min_seconds> <max_seconds>"
@@ -26,7 +28,11 @@ if [[ ! -d "$FOLDER" ]]; then
 fi
 
 while true; do
-  waypaper --folder "$FOLDER" --monitor "$MONITOR" --random
+	(
+		exec 200>"$lockfile"
+		flock -x 200
+	  	waypaper --folder "$FOLDER" --monitor "$MONITOR" --random
+	) 200>"$lockfile"
 
   RAND=$(( RANDOM % (MAX - MIN + 1) + MIN ))
   sleep "$RAND"
