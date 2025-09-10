@@ -15,3 +15,7 @@ set -g fish_greeting ""
 alias ff "fastfetch"
 alias ls "lsd"
 alias si "kitty +kitten icat"
+
+set -Ux SYSTEMD_EDITOR micro
+set -Ux EDITOR micro
+set -Ux VISUAL micro
