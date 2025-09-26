@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-SINK1="alsa_output.pci-0000_0c_00.4.analog-stereo"
+SINK1="alsa_output.pci-0000_0f_00.6.analog-stereo"
 SINK2="alsa_output.usb-streamplify_Mic._streamplify_Mic._20200508V100-00.analog-stereo"
 
 current=$(pactl get-default-sink)
