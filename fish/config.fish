@@ -19,3 +19,9 @@ alias si "kitty +kitten icat"
 set -Ux SYSTEMD_EDITOR micro
 set -Ux EDITOR micro
 set -Ux VISUAL micro
+
+# if status is-login
+#     if test -z "$WAYLAND_DISPLAY" -a "$XDG_VTNR" = 1
+#         exec start-hyprland
+#     end
+# end

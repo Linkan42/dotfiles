@@ -35,16 +35,15 @@
      "custom/vpn": {
        "interval": 3,
        "format": "{}",
-       "exec": "ip link show | grep -qF proton && echo 🔒 VPN || echo 🔓 No VPN",
+       "exec": "ip link show | grep -qF proton && echo 🔒 VPN || echo No VPN",
        "on-click": "protonvpn-app",
      },     
 	// ************************************
 	// ************************************
     "network": {
         "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "via ProtonVPN",
-        "format-linked": "{ifname} (No IP) ",
+        "format-wifi": "{essid} ({signalStrength}%)",
+        "format-linked": "via ProtonVPN",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
