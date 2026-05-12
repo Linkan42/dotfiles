@@ -16,8 +16,8 @@ MIN="$3"
 MAX="$4"
 
 # sanity checks
-if ! command -v swww >/dev/null 2>&1; then
-  echo "Error: swww is not installed or not on PATH."
+if ! command -v awww >/dev/null 2>&1; then
+  echo "Error: awww is not installed or not on PATH."
   exit 1
 fi
 
@@ -79,11 +79,11 @@ while true; do
       exit 1
     }
 
-    # If monitor is "-" or empty, don't pass --outputs (swww will display on all outputs)
+    # If monitor is "-" or empty, don't pass --outputs (awww will display on all outputs)
     if [[ -z "$MONITOR" || "$MONITOR" == "-" ]]; then
-      swww img --resize stretch --transition-type any --transition-fps 144 "$img"
+      awww img --resize stretch --transition-type any --transition-fps 144 "$img"
     else
-      swww img --outputs "$MONITOR" --resize stretch --transition-type any --transition-fps 144 "$img"
+      awww img --outputs "$MONITOR" --resize stretch --transition-type any --transition-fps 144 "$img"
     fi
   ) 200>"$lockfile"
 
