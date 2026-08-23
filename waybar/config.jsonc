@@ -3,10 +3,10 @@
     "position": "top",
     "spacing": 10,
     "modules-left": [
-        "hyprland/workspaces"
+        "hyprland/window"
     ],
     "modules-center": [
-        "hyprland/window"
+        "hyprland/workspaces"
     ],
     "modules-right": [
     	"custom/vpn",
@@ -33,7 +33,7 @@
      // ************************************
      // ************************************
      "custom/vpn": {
-       "interval": 3,
+       "interval": 10,
        "format": "{}",
        "exec": "ip link show | grep -qF proton && echo 🔒 VPN || echo No VPN",
        "on-click": "protonvpn-app",

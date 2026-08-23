@@ -31,7 +31,7 @@ set -Ux VISUAL micro
 # end
 
 function yeet
-    set -l model gemma4:e4b
+    set -l model ornith-1.5:35b-256K
     set -l endpoint http://localhost:11434/api/generate
     set -l msg
 
@@ -99,7 +99,7 @@ payload = {
     "keep_alive": 0,
     "think": False,
     "options": {
-        "num_ctx": 131072
+        "num_ctx": 262144
     },
 }
 

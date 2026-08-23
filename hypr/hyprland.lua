@@ -1,0 +1,8 @@
+require("auto_start")
+require("animations")
+require("dwindle")
+require("env")
+require("keywords")
+require("monitors")
+require("variables")
+require("workspace_rules")
