@@ -40,10 +40,10 @@ hl.bind(mainMod .. " + SHIFT + 9", hl.dsp.window.move({workspace = 9, follow = 1
 hl.bind(mainMod .. " + SHIFT + 0", hl.dsp.window.move({workspace = 10, follow = 1}))
 
 -- Resize active window
-hl.bind(mainMod .. " + code:37 + left", hl.dsp.window.resize({ x = -50, y = 0 })) -- code:37 is LCTRL
-hl.bind(mainMod .. " + code:37 + right", hl.dsp.window.resize({ x = 50, y = 0 }))
-hl.bind(mainMod .. " + code:37 + up", hl.dsp.window.resize({ x = 0, y = -50 }))
-hl.bind(mainMod .. " + code:37 + down", hl.dsp.window.resize({ x = 0, y = 50 }))
+hl.bind(mainMod .. " + CTRL + left", hl.dsp.window.resize({ x = -50, y = 0, relative = true }), { repeating = true })
+hl.bind(mainMod .. " + CTRL + right", hl.dsp.window.resize({ x = 50, y = 0, relative = true }), { repeating = true })
+hl.bind(mainMod .. " + CTRL + up", hl.dsp.window.resize({ x = 0, y = -50, relative = true }), { repeating = true })
+hl.bind(mainMod .. " + CTRL + down", hl.dsp.window.resize({ x = 0, y = 50, relative = true }), { repeating = true })
 
 -- Move floating window
 hl.bind(mainMod .. " + ALT + left", hl.dsp.window.move({ x = -50, y = 0 }))
